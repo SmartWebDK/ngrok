@@ -6,4 +6,5 @@ if [ -z "$WEBSHOP_URL" ]; then
   exit 1
 fi
 
-exec ngrok http -region=eu -host-header=${WEBSHOP_URL} ${WEBSHOP_URL}:80
+#exec ngrok http -region=eu -host-header=${WEBSHOP_URL} ${WEBSHOP_URL}:80
+exec ngrok http -region=eu ${WEBSHOP_URL}:80
