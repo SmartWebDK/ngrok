@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+
+  ngrok:
+    image: smartweb/ngrok:latest
+    build: .
